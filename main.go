@@ -4,7 +4,7 @@ import (
 	"os"
 
 	"github.com/carlmjohnson/exitcode"
-	"https://github.com/izner32/deployer/Deployer"
+	"https://github.com/izner32/deployer/cmd"
 )
 
 func main() {
