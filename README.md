@@ -8,7 +8,6 @@
         │―――― deploy.go: code for respective command
         │―――― doc.go: contains package declaration details
         │―――― root.go: code for the root command (in our case, deployer)
-        │―――― status.go: code for respective command
         │―――― undeploy.go: code for respective command
         │―――― version.go: code for respective command
     .gitignore
@@ -29,14 +28,18 @@ GOBIN="$(pwd)" go install https://github.com/izner32/deployer@latest
 ```
 
 ## Command Structure
-deployer {command} {sub-command} {flag}
 
-Example
 ```
 deployer deploy web 
 ```
 
 ## Deployer API
+#### Command Structure
+```
+deployer {command} {sub-command} {flags}
+deployer deploy web 
+```
+
 #### Deployment Resources
 * deploy: Deploy the application
     * web:
